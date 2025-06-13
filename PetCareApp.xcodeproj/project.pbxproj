@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED1C8FAD2DF80229008218F5 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C8FAC2DF80229008218F5 /* CalendarCell.swift */; };
+		ED1C8FAF2DF81497008218F5 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C8FAE2DF81497008218F5 /* TodoItem.swift */; };
+		ED1C8FB32DF822AA008218F5 /* PetProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1C8FB22DF822AA008218F5 /* PetProfile.swift */; };
+		ED6682172DF6F31900241625 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6682162DF6F31900241625 /* Utils.swift */; };
+		ED66821D2DF727C600241625 /* HospitalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED66821C2DF727C600241625 /* HospitalRecord.swift */; };
+		ED67FCF92DF5CDEA0052E195 /* WalkRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67FCF82DF5CDEA0052E195 /* WalkRecord.swift */; };
+		ED6B54782DF1D4CD00393043 /* AddWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B54772DF1D4CD00393043 /* AddWalkViewController.swift */; };
+		ED6B547A2DF1D56F00393043 /* AddHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B54792DF1D56F00393043 /* AddHospitalViewController.swift */; };
+		ED74CCCB2DF01A4400B1B2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCCA2DF01A4400B1B2AC /* AppDelegate.swift */; };
+		ED74CCCD2DF01A4400B1B2AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCCC2DF01A4400B1B2AC /* SceneDelegate.swift */; };
+		ED74CCD22DF01A4400B1B2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED74CCD02DF01A4400B1B2AC /* Main.storyboard */; };
+		ED74CCD42DF01A4700B1B2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED74CCD32DF01A4700B1B2AC /* Assets.xcassets */; };
+		ED74CCD72DF01A4700B1B2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED74CCD52DF01A4700B1B2AC /* LaunchScreen.storyboard */; };
+		ED74CCE32DF01BDD00B1B2AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCE22DF01BDD00B1B2AC /* LoginViewController.swift */; };
+		ED74CCE52DF01C0100B1B2AC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCE42DF01C0100B1B2AC /* SignupViewController.swift */; };
+		ED74CCE72DF01C2100B1B2AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCE62DF01C2100B1B2AC /* HomeViewController.swift */; };
+		ED74CCE92DF01C3F00B1B2AC /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCE82DF01C3E00B1B2AC /* TodoViewController.swift */; };
+		ED74CCEB2DF01C5B00B1B2AC /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCEA2DF01C5B00B1B2AC /* WalkViewController.swift */; };
+		ED74CCED2DF01C7600B1B2AC /* HospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCEC2DF01C7600B1B2AC /* HospitalViewController.swift */; };
+		ED74CCEF2DF01C9000B1B2AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED74CCEE2DF01C9000B1B2AC /* ProfileViewController.swift */; };
+		EDB7BAC62DF96755007B5873 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB7BAC52DF96755007B5873 /* TodoCell.swift */; };
+		EDB7BAC82DF9676F007B5873 /* TodoInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB7BAC72DF9676F007B5873 /* TodoInputCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED1C8FAC2DF80229008218F5 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		ED1C8FAE2DF81497008218F5 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		ED1C8FB22DF822AA008218F5 /* PetProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfile.swift; sourceTree = "<group>"; };
+		ED6682162DF6F31900241625 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		ED66821C2DF727C600241625 /* HospitalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalRecord.swift; sourceTree = "<group>"; };
+		ED67FCF82DF5CDEA0052E195 /* WalkRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkRecord.swift; sourceTree = "<group>"; };
+		ED6B54772DF1D4CD00393043 /* AddWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalkViewController.swift; sourceTree = "<group>"; };
+		ED6B54792DF1D56F00393043 /* AddHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHospitalViewController.swift; sourceTree = "<group>"; };
+		ED74CCC72DF01A4400B1B2AC /* PetCareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED74CCCA2DF01A4400B1B2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED74CCCC2DF01A4400B1B2AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED74CCD12DF01A4400B1B2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED74CCD32DF01A4700B1B2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED74CCD62DF01A4700B1B2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED74CCD82DF01A4700B1B2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED74CCE22DF01BDD00B1B2AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED74CCE42DF01C0100B1B2AC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		ED74CCE62DF01C2100B1B2AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED74CCE82DF01C3E00B1B2AC /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		ED74CCEA2DF01C5B00B1B2AC /* WalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
+		ED74CCEC2DF01C7600B1B2AC /* HospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController.swift; sourceTree = "<group>"; };
+		ED74CCEE2DF01C9000B1B2AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EDB7BAC52DF96755007B5873 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		EDB7BAC72DF9676F007B5873 /* TodoInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInputCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED74CCC42DF01A4400B1B2AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED74CCBE2DF01A4400B1B2AC = {
+			isa = PBXGroup;
+			children = (
+				ED74CCC92DF01A4400B1B2AC /* PetCareApp */,
+			);
+			sourceTree = "<group>";
+		};
+		ED74CCC82DF01A4400B1B2AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED74CCC72DF01A4400B1B2AC /* PetCareApp.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ED74CCC92DF01A4400B1B2AC /* PetCareApp */ = {
+			isa = PBXGroup;
+			children = (
+				ED74CCCA2DF01A4400B1B2AC /* AppDelegate.swift */,
+				ED74CCCC2DF01A4400B1B2AC /* SceneDelegate.swift */,
+				ED74CCD02DF01A4400B1B2AC /* Main.storyboard */,
+				ED1C8FAC2DF80229008218F5 /* CalendarCell.swift */,
+				ED74CCD32DF01A4700B1B2AC /* Assets.xcassets */,
+				ED74CCD52DF01A4700B1B2AC /* LaunchScreen.storyboard */,
+				ED74CCD82DF01A4700B1B2AC /* Info.plist */,
+				ED67FCF82DF5CDEA0052E195 /* WalkRecord.swift */,
+				ED66821C2DF727C600241625 /* HospitalRecord.swift */,
+				ED6682162DF6F31900241625 /* Utils.swift */,
+				ED74CCE22DF01BDD00B1B2AC /* LoginViewController.swift */,
+				ED74CCE42DF01C0100B1B2AC /* SignupViewController.swift */,
+				ED74CCE62DF01C2100B1B2AC /* HomeViewController.swift */,
+				ED1C8FB22DF822AA008218F5 /* PetProfile.swift */,
+				ED74CCE82DF01C3E00B1B2AC /* TodoViewController.swift */,
+				EDB7BAC52DF96755007B5873 /* TodoCell.swift */,
+				EDB7BAC72DF9676F007B5873 /* TodoInputCell.swift */,
+				ED1C8FAE2DF81497008218F5 /* TodoItem.swift */,
+				ED74CCEA2DF01C5B00B1B2AC /* WalkViewController.swift */,
+				ED74CCEC2DF01C7600B1B2AC /* HospitalViewController.swift */,
+				ED74CCEE2DF01C9000B1B2AC /* ProfileViewController.swift */,
+				ED6B54772DF1D4CD00393043 /* AddWalkViewController.swift */,
+				ED6B54792DF1D56F00393043 /* AddHospitalViewController.swift */,
+				ED74CCC82DF01A4400B1B2AC /* Products */,
+			);
+			path = PetCareApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED74CCC62DF01A4400B1B2AC /* PetCareApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED74CCDB2DF01A4700B1B2AC /* Build configuration list for PBXNativeTarget "PetCareApp" */;
+			buildPhases = (
+				ED74CCC32DF01A4400B1B2AC /* Sources */,
+				ED74CCC42DF01A4400B1B2AC /* Frameworks */,
+				ED74CCC52DF01A4400B1B2AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetCareApp;
+			productName = PetCareApp;
+			productReference = ED74CCC72DF01A4400B1B2AC /* PetCareApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED74CCBF2DF01A4400B1B2AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					ED74CCC62DF01A4400B1B2AC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = ED74CCC22DF01A4400B1B2AC /* Build configuration list for PBXProject "PetCareApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED74CCBE2DF01A4400B1B2AC;
+			productRefGroup = ED74CCC82DF01A4400B1B2AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED74CCC62DF01A4400B1B2AC /* PetCareApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED74CCC52DF01A4400B1B2AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED74CCD72DF01A4700B1B2AC /* LaunchScreen.storyboard in Resources */,
+				ED74CCD42DF01A4700B1B2AC /* Assets.xcassets in Resources */,
+				ED74CCD22DF01A4400B1B2AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED74CCC32DF01A4400B1B2AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED74CCE32DF01BDD00B1B2AC /* LoginViewController.swift in Sources */,
+				ED67FCF92DF5CDEA0052E195 /* WalkRecord.swift in Sources */,
+				ED66821D2DF727C600241625 /* HospitalRecord.swift in Sources */,
+				ED74CCEB2DF01C5B00B1B2AC /* WalkViewController.swift in Sources */,
+				ED1C8FAD2DF80229008218F5 /* CalendarCell.swift in Sources */,
+				ED6B547A2DF1D56F00393043 /* AddHospitalViewController.swift in Sources */,
+				ED74CCEF2DF01C9000B1B2AC /* ProfileViewController.swift in Sources */,
+				EDB7BAC82DF9676F007B5873 /* TodoInputCell.swift in Sources */,
+				ED1C8FB32DF822AA008218F5 /* PetProfile.swift in Sources */,
+				ED6682172DF6F31900241625 /* Utils.swift in Sources */,
+				ED74CCE52DF01C0100B1B2AC /* SignupViewController.swift in Sources */,
+				ED74CCE92DF01C3F00B1B2AC /* TodoViewController.swift in Sources */,
+				ED74CCED2DF01C7600B1B2AC /* HospitalViewController.swift in Sources */,
+				ED74CCCB2DF01A4400B1B2AC /* AppDelegate.swift in Sources */,
+				EDB7BAC62DF96755007B5873 /* TodoCell.swift in Sources */,
+				ED6B54782DF1D4CD00393043 /* AddWalkViewController.swift in Sources */,
+				ED74CCCD2DF01A4400B1B2AC /* SceneDelegate.swift in Sources */,
+				ED1C8FAF2DF81497008218F5 /* TodoItem.swift in Sources */,
+				ED74CCE72DF01C2100B1B2AC /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED74CCD02DF01A4400B1B2AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED74CCD12DF01A4400B1B2AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED74CCD52DF01A4700B1B2AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED74CCD62DF01A4700B1B2AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED74CCD92DF01A4700B1B2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED74CCDA2DF01A4700B1B2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED74CCDC2DF01A4700B1B2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetCareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lsm.hansung.ac.kr.PetCareApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED74CCDD2DF01A4700B1B2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetCareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lsm.hansung.ac.kr.PetCareApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED74CCC22DF01A4400B1B2AC /* Build configuration list for PBXProject "PetCareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED74CCD92DF01A4700B1B2AC /* Debug */,
+				ED74CCDA2DF01A4700B1B2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED74CCDB2DF01A4700B1B2AC /* Build configuration list for PBXNativeTarget "PetCareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED74CCDC2DF01A4700B1B2AC /* Debug */,
+				ED74CCDD2DF01A4700B1B2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED74CCBF2DF01A4400B1B2AC /* Project object */;
+}
