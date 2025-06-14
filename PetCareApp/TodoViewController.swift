@@ -26,6 +26,8 @@ class TodoViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 100
             
         selectedDate = Date()
         setupCalendar()
@@ -241,14 +243,106 @@ extension TodoViewController: UITableViewDelegate, UITableViewDataSource {
             let todo = todos[indexPath.row]
             cell.todoLabel.text = todo.title
             cell.checkBoxImageView.image = todo.isDone ? UIImage(systemName: "checkmark.square.fill") : UIImage(systemName: "square")
-
-            // 체크박스 이미지 눌렀을 때 토글 동작 콜백 설정
+            cell.configureAlarmTime(date: todo.alarmDate)
+            
+            // 체크박스 눌렀을때
             cell.checkBoxTapped = {
                 self.todos[indexPath.row].isDone.toggle()
                 self.saveTodos()
                 self.tableView.reloadRows(at: [indexPath], with: .automatic)
             }
+            
+            // 알림 버튼 눌렀을때
+            cell.alarmButtonTapped = {
+                self.showAlarmPicker(for: indexPath.row)
+            }
+            
             return cell
+        }
+    }
+    
+    // 알림 설정
+    func showAlarmPicker(for index: Int) {
+        let alert = UIAlertController(title: "알림 설정", message: "\n\n\n\n\n\n", preferredStyle: .alert)
+
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .time
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.frame = CGRect(x: 25, y: 30, width: 230, height: 140)
+
+        if let alarmDate = todos[index].alarmDate {
+            datePicker.date = alarmDate
+        }
+
+        alert.view.addSubview(datePicker)
+
+        alert.addAction(UIAlertAction(title: "취소", style: .cancel))
+
+        alert.addAction(UIAlertAction(title: "알림 삭제", style: .destructive, handler: { _ in
+            // 알림 삭제
+            self.todos[index].alarmDate = nil
+            self.deleteNotification(for: self.todos[index])
+            self.saveTodos()
+            self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        }))
+
+        alert.addAction(UIAlertAction(title: "예약", style: .default, handler: { _ in
+            // 선택된 날짜와 시간 결합
+            let selectedTime = datePicker.date
+            let calendar = Calendar.current
+
+            let timeComponents = calendar.dateComponents([.hour, .minute], from: selectedTime)
+
+            let dateComponents = calendar.dateComponents([.year, .month, .day], from: self.selectedDate)
+
+            // 날짜 + 시간 결합
+            var fullComponents = DateComponents()
+            fullComponents.year = dateComponents.year
+            fullComponents.month = dateComponents.month
+            fullComponents.day = dateComponents.day
+            fullComponents.hour = timeComponents.hour
+            fullComponents.minute = timeComponents.minute
+
+            if let fullDate = calendar.date(from: fullComponents) {
+                self.todos[index].alarmDate = fullDate
+                self.scheduleNotification(for: self.todos[index])
+            }
+
+            self.saveTodos()
+            self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        }))
+
+        present(alert, animated: true)
+    }
+
+    func deleteNotification(for todo: TodoItem) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [todo.id])
+    }
+    
+    // ios 로컬 알림 예약
+    func scheduleNotification(for todo: TodoItem) {
+        guard let date = todo.alarmDate else { return }
+
+        let content = UNMutableNotificationContent()
+        content.title = "할 일 알림"
+        content.body = todo.title
+        content.sound = .default
+
+        let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+
+        let request = UNNotificationRequest(
+            identifier: todo.id,
+            content: content,
+            trigger: trigger)
+                UNUserNotificationCenter.current().add(request)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("알림 등록 실패: \(error.localizedDescription)")
+            } else {
+                print("알림 등록 성공: \(todo.title)")
+            }
         }
     }
 
@@ -286,33 +380,31 @@ extension TodoViewController: UITextFieldDelegate {
 
     // todo 입력 후 엔터 누를시
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let text = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-
-        if let editingIndex = editingIndex {
-            // 수정 모드 종료
-            if !text.isEmpty {
-                todos[editingIndex].title = text
-                saveTodos()
-            }
-            self.editingIndex = nil
-            tableView.reloadData()
-            textField.resignFirstResponder()
-            return true
+        guard let text = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !text.isEmpty else {
+            return false
         }
-
-        // 빈 셀일 경우
-        if text.isEmpty {
+        if isAddingTodo {
+            let newTodo = TodoItem(title: text, isDone: false, alarmDate: nil)
+            todos.append(newTodo)
             isAddingTodo = false
-            tableView.reloadData()
-            textField.resignFirstResponder()
-            return true
+        } else if let index = editingIndex {
+            todos[index].title = text
+            editingIndex = nil
         }
 
-        todos.append(TodoItem(title: text, isDone: false))
         saveTodos()
-        isAddingTodo = false
         tableView.reloadData()
         textField.resignFirstResponder()
         return true
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if isAddingTodo {
+            isAddingTodo = false
+        } else {
+            editingIndex = nil
+        }
+        tableView.reloadData()
     }
 }
