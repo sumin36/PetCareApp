@@ -48,3 +48,8 @@
 - 저장 방식: UserDefaults 기반의 로컬 데이터 저장
 - 플랫폼: iOS
 - IDE: Xcode
+
+  ---
+
+  ## 시연 영상
+  [시연 영상 링크](https://youtu.be/DEES-zHGMpA)
