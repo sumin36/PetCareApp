@@ -49,7 +49,7 @@
 - 플랫폼: iOS
 - IDE: Xcode
 
-  ---
+---
 
 ## 시연 영상
 [시연 영상 링크](https://youtu.be/DEES-zHGMpA)
