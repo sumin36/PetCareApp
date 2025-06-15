@@ -51,5 +51,5 @@
 
   ---
 
-  ## 시연 영상
-  [시연 영상 링크](https://youtu.be/DEES-zHGMpA)
+## 시연 영상
+[시연 영상 링크](https://youtu.be/DEES-zHGMpA)
