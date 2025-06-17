@@ -52,4 +52,4 @@
 ---
 
 ## 프로젝트 영상
-[시연 영상 링크](https://youtu.be/jfOqw7TEXhI)
+[영상 링크](https://youtu.be/jfOqw7TEXhI)
