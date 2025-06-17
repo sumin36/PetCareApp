@@ -46,10 +46,11 @@
 ## 기술스택
 - 언어: Swift
 - 저장 방식: UserDefaults 기반의 로컬 데이터 저장
+  → 사용자별로 고유한 Key를 사용하여 데이터 분리 저장
 - 플랫폼: iOS
 - IDE: Xcode
 
 ---
 
 ## 프로젝트 영상
-[영상 링크](https://youtu.be/jfOqw7TEXhI)
+[영상 보러가기](https://youtu.be/jfOqw7TEXhI)
